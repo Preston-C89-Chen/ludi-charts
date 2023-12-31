@@ -42,7 +42,6 @@ export const ForceGraph = ({ nodes, links, options = {}, styles = {}, width = 80
   const customStyles =  {...defaultStyles, ...styles};
   const { node: nodeStyles, link: linkStyles } = customStyles;
   const svgRef = useRef();
-  console.log(nodes,links, options)
   useEffect(() => {
     // create simulation
     // Data for nodes and links

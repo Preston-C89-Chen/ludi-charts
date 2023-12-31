@@ -2,6 +2,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { ForceGraph } from './components/Graph/ForceGraph';
+import { World } from './components/Map/World';
+
 const nodes = [
   { id: "Arrays", group: 1 },
   { id: "Linked List", group: 1 },
@@ -28,6 +30,7 @@ function App() {
         </a>
 
         <ForceGraph nodes={nodes} links={links} options={{drag:true,label:true}}/>
+        <World />
       </div>
     </>
   )
